@@ -5,6 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(value = "Bank")
 public class Bank {
+
     @Id
     private String bankId ;
     private String name;
