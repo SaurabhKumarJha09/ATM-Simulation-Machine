@@ -1,0 +1,41 @@
+<div class="fluid" style="background-color:rgb(218, 219, 141)">
+    <div class="container-fluid">
+        <div class="row">
+        <h1 id="change">List of Customer:- </h1>
+        <table class="table table-secondary table-responsive " style="width: 100%;">
+            <thead>
+                <tr>
+                    <th scope="col">Sl no.</th>
+                    <th scope="col">Bank_Name</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let bank of bank, index as i">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{bank.name}}</td>
+                    <td><button class="btn-success button" data-bs-toggle="modal" data-bs-target="#bankModal" (click)="addBankData(bank.bankId)">Show Details</button></td>
+                    <td><button class="btn-danger" (click)="deleteBankById(bank.bankId);">Delete </button></td>
+                </tr>
+                <div class="modal fade" id="bankModal" tabindex="-1" aria-labelledby="bankModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="bankModal">Bank Details</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 style="text-align: center;">Bank_Name : {{bankData?.name}}</h4>
+                            <h4>Type : {{bankData?.type}}</h4>
+                            <h4>IFSC : {{bankData?.ifsc}}</h4>
+                            <h4>Branch : {{bankData?.branch}}</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>

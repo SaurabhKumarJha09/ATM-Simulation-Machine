@@ -1,0 +1,41 @@
+<div class="fluid" style="background-color:rgb(218, 219, 141)">
+    <div class="container-fluid">
+        <div class="row">
+        <h1 id="change">List of Customer:- </h1>
+        <table class="table table-secondary table-responsive " style="width: 100%;">
+            <thead>
+                <tr>
+                    <th scope="col">Sl no.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers, index as i">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{customer.name}}</td>
+                    <td><button class="btn-success button" data-bs-toggle="modal" data-bs-target="#customerModal" (click)="addCustomerData(customer.customerId)">Show Details</button></td>
+                    <td><button class="btn-danger" (click)="deleteCustomerById(customer.customerId);">Delete Customer</button></td>
+                </tr>
+                <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="customerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="customerModal">Customer Details</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 style="text-align: center;">Name : {{customerData?.name}}</h4>
+                            <h4>Address : {{customerData?.address}}</h4>
+                            <h4>Phone.no : {{customerData?.number}}</h4>
+                            <h4>Email : {{customerData?.emailAddress}}</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>

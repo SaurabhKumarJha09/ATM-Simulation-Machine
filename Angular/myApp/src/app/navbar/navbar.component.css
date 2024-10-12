@@ -1,0 +1,40 @@
+.form-control{
+    margin-left: 20px;
+}
+.btn{
+    margin-left: 20px;
+}
+
+.form-inline{
+    padding-left: 130px;
+}
+
+.navbar{
+    background-color: #b86f73da;
+
+
+}
+
+
+.nav-link{
+    color: white;
+}
+
+.nav-item{
+   
+    border-radius: 10px;
+    letter-spacing: 2px;
+    margin-left : 10px;
+}
+
+.nav-item:hover{
+    background-color: #912127d3;
+}
+
+.authentication
+{
+   border-radius: 3px;
+   letter-spacing: 2px;
+   margin: 2px;
+   margin-left: 120px;
+}
