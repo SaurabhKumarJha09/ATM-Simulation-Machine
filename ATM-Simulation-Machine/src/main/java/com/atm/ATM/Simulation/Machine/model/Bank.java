@@ -11,6 +11,7 @@ public class Bank {
     private String type;
     private String IFSC;
     private String branch;
+    private String city;
 
     public String getName() {
         return name;
