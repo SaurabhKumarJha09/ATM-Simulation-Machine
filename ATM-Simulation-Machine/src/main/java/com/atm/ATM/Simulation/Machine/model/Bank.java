@@ -5,14 +5,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(value = "Bank")
 public class Bank {
-
     @Id
     private String bankId ;
     private String name;
     private String type;
     private String IFSC;
     private String branch;
-    private String city;
 
     public String getName() {
         return name;
