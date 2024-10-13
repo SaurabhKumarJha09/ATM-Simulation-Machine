@@ -27,7 +27,7 @@
    }
 
    .image{
-    position: absolute;
-    top: 60%;
-                    
+    position: relative;
+    bottom: 130px;
+
    }
