@@ -1,40 +1,59 @@
-.form-control{
-    margin-left: 20px;
+
+/* Navbar base */
+.navbar {
+  background-color: rgba(209, 195, 195, 0.664);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0);
+  padding: 10px 20px;
+}
+
+/* Brand logo text */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a1a1a !important;
+}
+
+/* Navigation links */
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover .nav-link {
+  background-color: #e9f3ff;
+  color: #007bff !important;
+}
+
+/* Nav spacing */
+.nav-item {
+  margin-left: 10px;
+}
+
+/* Search form */
+.form-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-control {
+  height: 32px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Search button */
+.btn-outline-secondary {
+  color: #333;
+  border-color: #ccc;
+  height: 32px;
+  font-size: 14px;
+  padding: 0 12px;
 }
 .btn{
-    margin-left: 20px;
+  margin-right: 10px;
 }
 
-.form-inline{
-    padding-left: 130px;
-}
-
-.navbar{
-    background-color: #b86f73da;
-
-
-}
-
-
-.nav-link{
-    color: white;
-}
-
-.nav-item{
-   
-    border-radius: 10px;
-    letter-spacing: 2px;
-    margin-left : 10px;
-}
-
-.nav-item:hover{
-    background-color: #912127d3;
-}
-
-.authentication
-{
-   border-radius: 3px;
-   letter-spacing: 2px;
-   margin: 2px;
-   margin-left: 120px;
-}

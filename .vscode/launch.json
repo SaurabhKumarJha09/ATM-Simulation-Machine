@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AtmSimulationMachineApplication<ATM-Simulation-Machine>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.atm.ATM.Simulation.Machine.AtmSimulationMachineApplication",
+            "projectName": "ATM-Simulation-Machine",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

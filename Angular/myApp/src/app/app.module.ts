@@ -8,6 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BankComponent } from './bank/bank.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { FooterComponent } from './footer/footer.component';
+import { CardComponent } from './card/card.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,10 @@ import { EmployeeComponent } from './employee/employee.component';
     NavbarComponent,
     BankComponent,
     EmployeeComponent,
+    FooterComponent,
+    CardComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     HttpClientModule,

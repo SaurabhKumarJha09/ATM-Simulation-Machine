@@ -1,33 +1,118 @@
-.container
-{
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0,5)50%);
-    background-color:  rgba(142, 113, 189, 0.452);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 120vh;
-    max-width:1800px;
 
-    }
+   * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
 
-    .content{
-        padding-top: 230px;
-        padding-left: 150px;
-    }
-   .discription{
-    padding-left: 580px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   }
+body {
+  font-family: Arial, sans-serif;
+}
 
-   .discription1
-   {
-    padding-left: 250px;
-    text-decoration:overline;
-    font-family: 'Courier New', Courier, monospace;
-   }
+.container {
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  min-height: 100vh;
+  background: linear-gradient(to top, rgba(0,0,0,0,5)50%);
+  background-color: rgba(142, 113, 189, 0.452);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+}
 
-   .image{
-    position: relative;
-    bottom: 130px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
-   }
+.content-section {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.content {
+  padding-top: 80px;
+  padding-left: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.discription {
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.discription1 {
+  margin-top: 10px;
+  text-decoration: overline;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+
+.image {
+  flex: 1 1 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    padding-top: 40px;
+    font-size: 1.5rem;
+  }
+
+  .discription,
+  .discription1 {
+    padding-left: 0;
+    font-size: 1rem;
+  }
+
+  .image {
+    margin-top: 30px;
+    position: static;
+  }
+}
+
+.button-wrapper {
+  margin-top: 30px;
+  display: flex;
+  /* margin-left: 28rem */
+  /* justify-content: center; */
+}
+
+.get-started-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.get-started-btn:hover {
+  background-color: #0056b3;
+}
+
